@@ -1,5 +1,3 @@
-nick is a unit
-
 for setup instructions:
 
     docs/setup.md
