@@ -1,0 +1,15 @@
+{
+  "name": "PTracker",
+  "version": "0.1.0",
+  "description": "frontend build config",
+  "main": "index.js",
+  "scripts": {
+    "dev": "(npm --prefix ./client/ run dev)",
+    "postinstall": "(yarn --cwd ./client/ install && npm --prefix ./client/ run build)"
+  },
+  "engines": {
+    "yarn": "1.4.0",
+    "node": "10.1.0"
+  },
+  "author": "nicholasseidl@gmail.com"
+}

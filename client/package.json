@@ -1,0 +1,28 @@
+{
+    "name": "PTracker",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@types/react-redux": "^6.0.4",
+        "@types/react-spinkit": "^3.0.3",
+        "classnames": "^2.2.6",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "react-redux": "^5.0.7",
+        "react-scripts-ts": "2.16.0",
+        "react-spinkit": "^3.0.0",
+        "redux-thunk": "^2.3.0",
+        "@types/jest": "^23.1.6",
+        "@types/node": "^10.5.2",
+        "@types/react": "^16.4.6",
+        "@types/react-dom": "^16.0.6",
+        "typescript": "^2.9.2",
+        "css-loader": "^1.0.0",
+        "typings-for-css-modules-loader": "^1.7.0"
+    },
+    "scripts": {
+        "start": "react-scripts-ts start",
+        "build": "node scripts/build.js",
+        "dev": "node scripts/start.js"
+    }
+}
