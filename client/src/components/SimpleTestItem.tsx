@@ -27,7 +27,7 @@ export default class SimpleTestItem extends React.Component<Props, {}> {
                         {testItem.listing_name}
                     </div>
 
-                    <div className={styles.price}>{testItem.price}</div>
+                    <div className={styles.price}>${testItem.price}</div>
                 </div>
             </a>
         )
