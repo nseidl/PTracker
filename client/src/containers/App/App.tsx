@@ -43,9 +43,10 @@ export class App extends React.Component<Props, State> {
 
         return (
             <div className={styles.app}>
-                <header className={styles.appHeader}>
+                <header className={styles.appHeader}>                
                     <h1 className={styles.appTitle}>PTracker</h1>
                 </header>
+                
                 {date && !this.state.itemsLoading ? (
                     <div className={styles.content}>
                         {testItemsList
@@ -55,13 +56,14 @@ export class App extends React.Component<Props, State> {
                             )
                             .map((aTestItem: types.ITestItem) => (
                                 <SimpleTestItem
-                                    testItemInformation={aTestItem}
+                                    testItemInformation={aTestItem}                                    
                                 />
                             ))}
+                            {/* <div>{date.asString}</div> */}
                         <a className={styles.container} href='https://seanngpack.com' target="_blank">
                             <div>
                                 <div className={styles.picture}>(picture)</div>
-                                <p className={styles.date}>Last updated on 2019-01-16 06:23</p>
+                                
                             </div>
                             <div className={styles.text}>
                                 <div className={styles.name}>

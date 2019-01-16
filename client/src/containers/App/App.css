@@ -40,6 +40,13 @@
     flex-wrap: wrap;
 }
 
+@media (min-width: 767px) {
+    .appHeader {
+        margin-bottom: 2rem;
+        
+    }
+}
+
 /* Paste this to other file */
 
 .date {
@@ -74,11 +81,6 @@
 
 
 @media (min-width: 767px) {
-    .appHeader {
-        margin-bottom: 2rem;
-        
-    }
-
     .container {
         height: auto;
         padding: 1rem 1rem 1rem 1rem;
@@ -88,6 +90,3 @@
         transition: 0.3s;
     }
 }
-
-
-

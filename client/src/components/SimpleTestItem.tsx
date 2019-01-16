@@ -14,16 +14,22 @@ export default class SimpleTestItem extends React.Component<Props, {}> {
         const testItem = this.props.testItemInformation
 
         return (
-            <div className={styles.container} key={testItem.id}>
-                <div className={styles.picture}>(picture) </div>
-                <div className={styles.text}>
-                    <div className={styles.name}>{testItem.listing_name}</div>
-                    <div className={styles.price}>${testItem.price} </div>
-                    <a href={testItem.post_link} target="_blank">
-                        link
-                    </a>
+            <a
+                className={styles.container}
+                href={testItem.post_link}
+                target="_blank"
+            >
+                <div>
+                    <div className={styles.picture}>(picture)</div>
                 </div>
-            </div>
+                <div className={styles.text}>
+                    <div className={styles.name}>
+                        {testItem.listing_name}
+                    </div>
+
+                    <div className={styles.price}>{testItem.price}</div>
+                </div>
+            </a>
         )
     }
 }
