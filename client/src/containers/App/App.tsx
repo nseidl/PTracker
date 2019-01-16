@@ -48,7 +48,6 @@ export class App extends React.Component<Props, State> {
                 </header>
                 {date && !this.state.itemsLoading ? (
                     <div className={styles.content}>
-                        <p>{date.asString}</p>
                         {testItemsList
                             .sort(
                                 (a: types.ITestItem, b: types.ITestItem) =>
@@ -58,8 +57,20 @@ export class App extends React.Component<Props, State> {
                                 <SimpleTestItem
                                     testItemInformation={aTestItem}
                                 />
-                            ))}                        
-                        
+                            ))}
+                        <a className={styles.container} href='https://seanngpack.com' target="_blank">
+                            <div>
+                                <div className={styles.picture}>(picture)</div>
+                                <p className={styles.date}>Last updated on 2019-01-16 06:23</p>
+                            </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                
+                                <div className={styles.price}>$1999</div>
+                            </div>
+                        </a>
                     </div>
                 ) : (
                     loader
