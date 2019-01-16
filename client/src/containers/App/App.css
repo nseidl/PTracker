@@ -55,10 +55,6 @@
     font-size: .5rem;
 }
 
-
-
-
-
 .container {
     all:unset;   
     display: flex;
@@ -89,7 +85,6 @@
 .name {
     margin-bottom: 1rem;
 }
-
 
 @media (min-width: 767px) {
     .container {
