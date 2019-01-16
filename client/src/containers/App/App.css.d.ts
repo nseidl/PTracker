@@ -6,6 +6,9 @@ export interface IAppCss {
   'appHeader': string;
   'appTitle': string;
   'appIntro': string;
+  'content': string;
+  'container': string;
+  'price': string;
   'appLogo-spin': string;
 }
 

@@ -33,3 +33,45 @@
         transform: rotate(360deg);
     }
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vw;
+    padding: 1rem 0 1rem 0;   
+    margin: 0 1rem 1rem 1rem;
+    flex: 0 0 calc(100%/2 - 2rem); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (min-width: 767px) {
+
+    .container {
+        
+        height: auto;
+        padding: 1rem 0 1rem 0;
+        margin: 0 2rem 2rem 2rem;
+        flex: 0 0 calc(100%/3 - 4rem);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+}
+
+
+

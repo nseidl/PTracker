@@ -47,9 +47,8 @@ export class App extends React.Component<Props, State> {
                     <h1 className={styles.appTitle}>PTracker</h1>
                 </header>
                 {date && !this.state.itemsLoading ? (
-                    <div>
+                    <div className={styles.content}>
                         <p>{date.asString}</p>
-
                         {testItemsList
                             .sort(
                                 (a: types.ITestItem, b: types.ITestItem) =>
@@ -60,6 +59,37 @@ export class App extends React.Component<Props, State> {
                                     testItemInformation={aTestItem}
                                 />
                             ))}
+                        <div className={styles.container}>
+                            <div className={styles.picture}>(picture) </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                <div className={styles.price}>$1999</div>
+                                <div>link</div>
+                            </div>
+                        </div>
+                        <div className={styles.container}>
+                            <div className={styles.picture}>(picture) </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                <div className={styles.price}>$1999</div>
+                                <div>link</div>
+                            </div>
+                        </div>
+                        <div className={styles.container}>
+                            <div className={styles.picture}>(picture) </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                <div className={styles.price}>$1999</div>
+                                <div>link</div>
+                            </div>
+                        </div>
+                        
                     </div>
                 ) : (
                     loader
