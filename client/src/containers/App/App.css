@@ -61,7 +61,7 @@
     height: 50vw;
     padding: 1rem 1rem 1rem 1rem;   
     margin: 0 1rem 1rem 1rem;
-    flex: 0 0 calc(100%/2 - 2rem); 
+    flex: 0 0 calc(100%/2 - 4rem); 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
@@ -85,7 +85,7 @@
         height: auto;
         padding: 1rem 1rem 1rem 1rem;
         margin: 0 2rem 2rem 2rem;
-        flex: 0 0 calc(100%/3 - 4rem);
+        flex: 0 0 calc(100%/3 - 6rem);
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
     }

@@ -73,7 +73,34 @@ export class App extends React.Component<Props, State> {
                                 <div className={styles.price}>$1999</div>
                             </div>
                         </a>
+                        <a className={styles.container} href='https://seanngpack.com' target="_blank">
+                            <div>
+                                <div className={styles.picture}>(picture)</div>
+                                
+                            </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                
+                                <div className={styles.price}>$1999</div>
+                            </div>
+                        </a>
+                        <a className={styles.container} href='https://seanngpack.com' target="_blank">
+                            <div>
+                                <div className={styles.picture}>(picture)</div>
+                                
+                            </div>
+                            <div className={styles.text}>
+                                <div className={styles.name}>
+                                    H 6D-400c MS Medium Format DSLR Camera
+                                </div>
+                                
+                                <div className={styles.price}>$1999</div>
+                            </div>
+                        </a>
                     </div>
+                    
                 ) : (
                     loader
                 )}
