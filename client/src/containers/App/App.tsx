@@ -45,6 +45,7 @@ export class App extends React.Component<Props, State> {
             <div className={styles.app}>
                 <header className={styles.appHeader}>                
                     <h1 className={styles.appTitle}>PTracker</h1>
+                    <div className={styles.underline}></div>
                 </header>
                 
                 {date && !this.state.itemsLoading ? (
