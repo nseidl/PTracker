@@ -55,13 +55,17 @@
     font-size: .5rem;
 }
 
+
+
+
+
 .container {
     all:unset;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #3f3f3f;
-    color: #d1d1d1;
+    -webkit-text-fill-color: #d1d1d1;
     height: 50vw;
     border-radius: 10px;
     padding: 1rem 1rem 1rem 1rem;   
