@@ -8,10 +8,13 @@
 }
 
 .appHeader {
-    background-color: #222;
-    height: 150px;
+    background-color: #5aed88;
+    height: 20vw;
     padding: 20px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .appTitle {
