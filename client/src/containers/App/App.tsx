@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { getDate, getAllTestItems } from '../../redux/actions'
 import { connect } from 'react-redux'
-import logo from './logo.svg'
+
 import { bindActionCreators, Dispatch } from '../../../node_modules/redux'
 import * as Spinner from 'react-spinkit'
 import * as types from '../../types'
@@ -44,7 +44,6 @@ export class App extends React.Component<Props, State> {
         return (
             <div className={styles.app}>
                 <header className={styles.appHeader}>
-                    <img src={logo} className={styles.appLogo} alt="logo" />
                     <h1 className={styles.appTitle}>PTracker</h1>
                 </header>
                 {date && !this.state.itemsLoading ? (
