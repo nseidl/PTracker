@@ -1,28 +1,31 @@
 .app {
     text-align: center;
-}
-
-.appLogo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+    background-color: #262626;
 }
 
 .appHeader {
-    background-color: #5aed88;
+    margin-bottom: 1rem;
+    background-color: #262626;
     height: 20vw;
     padding: 20px;
-    color: white;
+    color: #d1d1d1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .appTitle {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .appIntro {
     font-size: large;
+}
+
+.underline {
+    width: 80vw;
+    border-bottom: 1px solid #3f3f3f;
 }
 
 @keyframes appLogo-spin {
@@ -39,31 +42,53 @@
     flex-wrap: wrap;
 }
 
+@media (min-width: 767px) {
+    .appHeader {
+        margin-bottom: 2rem;
+        
+    }
+}
 
-.container {   
+/* Paste this to other file */
+
+.date {
+    font-size: .5rem;
+}
+
+.container {
+    all:unset;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #3f3f3f;
+    color: #d1d1d1;
     height: 50vw;
-    padding: 1rem 0 1rem 0;   
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;   
     margin: 0 1rem 1rem 1rem;
-    flex: 0 0 calc(100%/2 - 2rem); 
+    flex: 0 0 calc(100%/2 - 4rem); 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
-.price {
-    font-weight: 600;
+.container:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
 
-.container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.price {
+    color: #afafaf;
+    font-size: .8rem;
+    font-weight: 400;
 }
+
+.name {
+    margin-bottom: 1rem;
+}
+
 
 @media (min-width: 767px) {
-
     .container {
-        
         height: auto;
         padding: 1rem 0 1rem 0;
         margin: 0 1rem 1rem 1rem;
@@ -72,6 +97,3 @@
         transition: 0.3s;
     }
 }
-
-
-

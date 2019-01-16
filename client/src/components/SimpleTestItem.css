@@ -1,0 +1,46 @@
+.date {
+    font-size: .5rem;
+}
+
+.container {
+    all:unset;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #3f3f3f;
+    color: #d1d1d1;
+    height: 50vw;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;   
+    margin: 0 1rem 1rem 1rem;
+    flex: 0 0 calc(100%/2 - 4rem); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.container:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+}
+
+.price {
+    color: #afafaf;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.name {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 767px) {
+    .container {
+        height: auto;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 2rem 2rem 2rem;
+        flex: 0 0 calc(100%/3 - 6rem);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+}
